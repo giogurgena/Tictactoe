@@ -1,0 +1,122 @@
+font-face {
+  font-family: 'ZCOOLXiaoWei';
+  src: url(../fonts/ZCOOLXiaoWei.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/bg.jpg);
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  font-size: 70px;
+  margin: 20px 0 0 0;
+  font-weight: bolder;
+  color: rgb(247, 211, 93);
+  text-shadow: 2px 2px 12px rgba(66, 66, 66, 1);
+}
+
+.game-result {
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  color: rgb(2, 129, 34);
+}
+
+.game-settings {
+  max-width: 500px;
+}
+
+.game-settings input {
+  height: 30px;
+  max-width: 80px;
+  font-size: 12px;
+  margin: auto;
+  padding-left: 10px;
+  font-style: italic;
+  border: 1px solid rgb(95, 131, 209);
+  color: rgb(73, 73, 73);
+  box-shadow: 10px 9px 39px -17px rgba(0, 0, 0, 0.925);
+}
+
+.game {
+  width: 50%;
+  /* height: 500px; */
+  margin: 50px;
+  /* background: rgba(255, 255, 255, 0.397);
+  box-shadow: 0px 9px 35px -7px rgba(0, 0, 0, 0.67);
+  border: 7px solid rgb(72, 72, 189); */
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* background: rgba(0, 0, 0, 0.171); */
+}
+
+.play {
+  font-size: 40px;
+  width: 400px;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+  padding: 1px 40px;
+  text-align: center;
+  text-decoration: underline;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 3px 9px 29px -11px rgba(0, 0, 0, 0.73);
+  z-index: 111;
+}
+
+.play:hover {
+  color: black;
+  box-shadow: none;
+}
+
+.start {
+  display: block;
+  background: rgb(41, 185, 41);
+}
+.again {
+  display: block;
+  background: rgb(194, 50, 50);
+}
+
+.game-boxes {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.box {
+  background: white;
+  height: 100px;
+  width: 100px;
+  margin: 5px;
+  box-shadow: 3px 9px 29px -11px rgba(0, 0, 0, 0.73);
+}
