@@ -1,23 +1,27 @@
 import React from 'react';
 
-import { generateBoxArray } from '../../../helpers/rangeHelper';
-
 import Box from './Box';
 
-const Game = ({ started, column, row }) => {
+const Game = ({ started, boxes, onBoxClick }) => {
   if (!started) {
     return <div className="game-boxes"></div>;
   }
 
-  var array = generateBoxArray(row, column);
-  console.log(array);
   return (
     <div className="game-boxes">
-      {array.map((rowItem, index) => {
+      {boxes.map((rowItem, rowIndex) => {
         return (
-          <div key={index}>
-            {rowItem.map((columnItem, index) => {
-              return <Box key={index} index={index} value={columnItem.value} />;
+          <div className="box-row" key={rowIndex}>
+            {rowItem.map((columnItem, columnIndex) => {
+              return (
+                <Box
+                  key={columnIndex}
+                  value={columnItem.value}
+                  rowIndex={rowIndex}
+                  columnIndex={columnIndex}
+                  onClick={onBoxClick}
+                />
+              );
             })}
           </div>
         );

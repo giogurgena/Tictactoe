@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Box = () => {
+const Box = ({ value, columnIndex, rowIndex, onClick }) => {
   return (
-    <div className="box">
-      <button></button>
+    <div className="box" onClick={() => onClick(rowIndex, columnIndex)}>
+      {value}
     </div>
   );
 };

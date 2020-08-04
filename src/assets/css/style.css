@@ -55,7 +55,7 @@ body {
 }
 
 .game {
-  width: 50%;
+  width: 80%;
   /* height: 500px; */
   margin: 50px;
   /* background: rgba(255, 255, 255, 0.397);
@@ -104,19 +104,39 @@ body {
 }
 
 .game-boxes {
-  width: 500px;
-  height: 500px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  /* width: 500px;
+  height: 500px; */
   position: absolute;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: center; */
 }
 
 .box {
   background: white;
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   margin: 5px;
   box-shadow: 3px 9px 29px -11px rgba(0, 0, 0, 0.73);
+
+  color: red;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 1px 1.5px 4px rgba(66, 66, 66, 1);
+  float: left;
+}
+
+.box button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.box button:focus {
+  border: none;
 }
